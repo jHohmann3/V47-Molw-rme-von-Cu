@@ -6,7 +6,7 @@ from pylab import figure, axes, pie, title, show
 
 print('Graphikbitte')
 print('Steigung','Y-Achsenabschnitt')
-U,I0,t0,R=np.loadtxt('tab1.txt', unpack=True,delimiter=',')
+U,I0,t0,R,TC=np.loadtxt('tab1.txt', unpack=True,delimiter=',')
 
 #def f(x,a,b):
 #    return a*x+b
@@ -37,8 +37,11 @@ while i < 21:
     #print(dT)
     i += 1
 
+TK = TC+273.2 
 
 print(T, t)
+print(TK)
+print(T0)
 
 
 #plt.savefig('Werte.pdf')
