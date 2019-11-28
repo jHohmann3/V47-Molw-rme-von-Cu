@@ -57,7 +57,9 @@
 %  \symup{\Delta} X = \frac{1}{\sqrt{N}} \sqrt{\frac{1}{\sqrt{N-1}} \sum_{i=1}^N (X_{i}-\overline{X})²}= 0,02 \, \si{Hz} 
 %\end{equation*}
 
-Zunächst wurde der innere Kupferzylinder der Apperatur, welche in der Durchführung beschrieben ist, mit 
+\subsection{Messung der Molwärme bei konstantem Druck und Berechnung der Molwärme bei konstantem Volumen}
+
+Zunächst wurde der äußerer Probenzylinder der Apperatur, welche in der Durchführung beschrieben ist, mit 
 flüssigem Stickstoff auf eine Temperatur von $T_0 = \SI{-189,5}{\celsius}$ gekühlt, da eine tiefere Temperatur 
 nicht erreicht werden konnte. Von da an wurde die Heizspannung $U$, der Heizstrom $I$, der Widerstand $R$ 
 und die Zeit $t$ die nötig ist um eine Temperaturerhöhung um etwa $10$ K zu erreichen, gemessen. Die Werte sind in Tabelle \ref{Tab1} 
@@ -76,7 +78,8 @@ Messmethode nicht auf zwei Nachkommastellen genau bestimmt werden kann, und durc
 keine solche Genauigkeit suggeriert werden sollte. 
 Außerdem wurde in der Tabelle \ref{Tab1} die Temperaturdifferenz $\symup{\Delta}T$ angegeben, diese ergibt 
 sich aus der Temperatur $T$ zum Messzeitpunkt der Zeit $t$, und der Temperatur davor. Für die erste 
-Temperaturdifferenz waren es die Anfangstemperatur $T_0$ und $T=\SI{-180,1}{\celsius}$. 
+Temperaturdifferenz wurden die Anfangstemperatur $T_0$ und $T=\SI{-180,1}{\celsius}$ verwendet, für die darauf 
+immer die gemessene Endtemperatur und die Endtemperatur aus der vorherigen Messung.
 
 \begin{table}
     \centering
@@ -117,19 +120,22 @@ Temperaturdifferenz waren es die Anfangstemperatur $T_0$ und $T=\SI{-180,1}{\cel
 \end{table}
 \FloatBarrier
 
-Durch die Formel \ref{eqn:cp} wurde die Molwärme bei konstantem Druck berechnet, mit Formel \ref{eqn:cv} 
-wird diese in Molwärme bei konstantem Volumen umgerechnet. Die Werte für den linaren Ausdehnungskoefizienten 
-werden der Tabelle in Abbildung \ref{fig:a} entnommen. Dabei wird die Temperatur immer auf die nächste 
-Zehnerpotenz abgerudet. Z.B. wird für den ersten Wert bei $T=\SI{93,1}{\kelvin}$ wird der lineare Ausdehnungskoefizient 
-für den Wert von $\SI{90}{\kelvin}$ verwendet. Da die Molwärme bei konstantem Druck auf die erste Nachkommastelle 
-gerundet wird, ist der entstehende Fehler vernachlässigbar.
+Durch die Formel \ref{eqn:cp} wurde die Molwärme bei konstantem Druck $C_{\si{p}}$ berechnet, mit Formel 
+\ref{eqn:cv} wird diese in Molwärme bei konstantem Volumen $C_{\si{v}}$ umgerechnet. Auch diese berechneten 
+Werte sind in Tabelle \ref{Tab1} zu finden. Die Werte für den 
+linaren Ausdehnungskoefizienten $\alpha$, die für die Berechnung der Molwärme bei konstantem Volumen notwendig 
+sind, werden der Tabelle in Abbildung \ref{fig:a} entnommen. Dabei wird die 
+Temperatur immer auf die nächste Zehnerpotenz abgerudet. Z.B. wird für den ersten Wert bei 
+$T=\SI{93,1}{\kelvin}$ der lineare Ausdehnungskoefizient für den Wert von $\SI{90}{\kelvin}$ verwendet. 
+Da die Molwärme bei konstantem Druck auf die erste Nachkommastelle gerundet wird, ist der entstehende 
+Fehler vernachlässigbar.
 
 Zur Veranschaulichung der Daten wird die Molwärme bei konstanten Volumen gegen die Temperatur aufgetragen. 
 Der Graph ist in Abbildung \ref{fig:cv} zu sehen. 
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.45\textwidth]{alpha.png}
+  \includegraphics[width=0.95\textwidth]{alpha.png}
   \caption{Der lineare Ausdehnungskoefizient.}
   \label{fig:a}
 \end{figure}
@@ -141,6 +147,12 @@ Der Graph ist in Abbildung \ref{fig:cv} zu sehen.
   \label{fig:cv}
 \end{figure}
 
+
+
+
+
+
+\subsection{Bestimmung der Debye-Temperatur}
  
  
  

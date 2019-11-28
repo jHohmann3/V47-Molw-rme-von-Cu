@@ -21,10 +21,10 @@ cv, T = np.loadtxt('tab2.txt', unpack=True,delimiter=',')
 plt.figure(1)
 plt.plot(T,cv,'x')
 #plt.plot(x_new,f(x_new,*Werte),'-', label='Lineare Regression')
-plt.xlabel('$C_{v}$/$..$')
-plt.ylabel('$T$/K')
+plt.xlabel('$T$/K')
+plt.ylabel(r'$C_{v}$/$\frac{J}{mol K}$')
 plt.grid()
-plt.legend()
+#plt.legend()
 
 
 
